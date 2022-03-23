@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水果</title>
+</head>
+<body>
+    <h4>{{ user.username }}的水果</h4>
+    <h5>fluit-list: {{ fluit|length }}</h5>
+<ul>
+    {% for item in fluit %}
+        <li>{{ item.name}} - 生产自- {{ item.place }}</li>
+    {% endfor %}
+
+    {{ user.username|save }}
+</ul>
+</body>
+</html>
