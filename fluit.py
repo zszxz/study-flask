@@ -17,6 +17,14 @@ def to_fluit():
 def save(var):
     return var + ' is save'
 
+@app.route('/child')
+def to_child():
+    return render_template('child.html')
+
+@app.route('/pic')
+def to_pic():
+    return render_template('pic.html')
+
 if __name__ == '__main__':
     # 开启调试
    app.run(debug = True)

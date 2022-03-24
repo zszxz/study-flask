@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% from '_macors.html' import input %}
+
+{% block title %}基础模块{% endblock %}
+
+{% block content %}
+        用户： {{ input(value='纳兰') }}
+        内容：人生若只如初见，何事秋风悲画扇
+{% endblock %}
+
+{% block footer %}
+    @知识追寻者版权所有
+{% endblock %}
